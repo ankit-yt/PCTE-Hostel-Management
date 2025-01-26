@@ -22,7 +22,7 @@ function Register() {
         const fetchRooms = async () => {
             if (userData.hostel) {
                 try {
-                    const response = await axios.get('http://localhost:5000/api/rooms', {
+                    const response = await axios.get(`${window.location.origin}/api/rooms`, {
                         params: { hostel: userData.hostel }
                     });
                     const filteredRooms = response.data.filter(room => room.occupied < room.capacity);
