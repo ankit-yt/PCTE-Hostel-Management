@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist',  // default output folder is 'dist'
-  }
+    target: 'esnext', // Ensure modern JS syntax for browsers
+  },
   
 })

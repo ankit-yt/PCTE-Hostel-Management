@@ -44,9 +44,10 @@ io.on('connection', (socket) => {
     });
 });
 
-app.use(express.static(path.resolve(__dirname, 'Frontend', 'dist')));
+
 
 app.get('/', (req, res) => {
+    app.use(express.static(path.resolve(__dirname, 'Frontend', 'dist')));
     res.sendFile(path.resolve(__dirname, 'Frontend', 'dist', 'index.html'));
 });
 
