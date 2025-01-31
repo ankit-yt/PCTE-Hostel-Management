@@ -137,7 +137,7 @@ function Hostel_rooms({isDarkTheme}) {
           const theme = isDarkTheme ? darkThemeStyles : lightThemeStyles;
 
     return (
-        <div className={`p-6 h-full overflow-auto ${theme.container}  `} >
+        <div className={`p-6 h-screen overflow-auto ${theme.container}  `} >
                <form onSubmit={addNewRoom} className={`mb-4 ${theme.card} p-4 rounded shadow-md`}>
                 <h2 className={`text-base ${isDarkTheme ? "text-gray-100 " : "text-black"} font-semibold mb-2`}>Add New Room</h2>
                 <div className="flex space-x-2 mb-2">

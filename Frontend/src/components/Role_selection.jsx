@@ -37,7 +37,7 @@ function Role_selection() {
         <img className='w-full h-full object-cover' src="/role_selection/hostel.jpg" alt="" />
       </div>
       </div>
-      <div className='w-full h-3/4 g-red-500  flex justify-center gap-10 items-center'>
+      <div className='w-full h-3/4 g-red-500  flex flex-col md:flex-row justify-center gap-5 md:gap-10 items-center p-4'>
         {roles.map((item, index) => (
           <Role_card item={item} />
 

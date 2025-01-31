@@ -91,9 +91,7 @@ function Login() {
             <button className="w-full bg-[#656ED3] rounded-md py-1 text-white my-8" type="submit">
               Login
             </button>
-            <h5 className="w-full text-center text-sm">
-              Do not have an account? <a className="font-semibold" href="">Register</a>
-            </h5>
+           
           </form>
         </div>
       </div>
